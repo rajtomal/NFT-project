@@ -1,0 +1,494 @@
+
+@font-face {
+    font-family: nirmala;
+    src: url(/css/web-fonts/Nirmala.ttf);
+  }
+  
+  @font-face {
+    font-family: roobert-regular;
+    src: url(/css/web-fonts/Roobert-Regular.ttf);
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: roobert-regular;
+}
+a{
+    text-decoration: none;
+}
+ul ,li{
+    list-style-type: none;
+}
+
+/*====================== header part ====================*/
+.navigation-part{
+    background-color: #000E40;
+    background-image: url(/images/bac.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigation-part .navbar-brand img{
+    width: 60px;
+}
+.navigation-part .nav-item .nav-link {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 25px;
+    color:rgba(249, 249, 249, 0.91);
+    transition: all linear 0.4s;
+}
+.navigation-part .nav-item .nav-link:hover{
+    color:#00AED9 ;
+}
+.navigation-part .nav-item .btn-nav {
+	border: 1px solid rgba(249, 249, 249, 0.91);
+    border-radius: 5px;
+    background: transparent;
+}
+.navigation-part .nav-item .btn-nav:hover{
+	border: 1px solid #00AED9;
+    background: #00AED9;
+    color: #fff;
+}
+
+  .menu-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FDF2F7;
+	box-shadow: 0 5px 15px 0 rgba(204, 204, 204, 0.1);
+	animation: pos 1s linear;
+	z-index: 9999999;
+	width: 100%;
+	background: #000E40;
+}
+@keyframes pos{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.down-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99999;
+    display: none;
+    animation: bawntop 4s infinite;
+}
+@keyframes bawntop{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*====================== banner part ====================*/
+
+.banner-part{
+    padding: 230px 0;
+    background-image: url(/images/cover.png);
+    text-align: center;
+}
+.banner-part h1 {
+	color: #FFF;
+	font-size: 45px;
+	text-align: center;
+	line-height: 55px;
+	font-weight: 600;
+}
+.banner-part h1 span{
+	color: #00AED9;
+}
+.banner-part a {
+	font-size: 18px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: #fff;
+    border: 1px solid#00AED9;
+    border-radius: 5px;
+    background: #00AED9;
+    transition: all linear 0.4s;
+}
+.banner-part a:hover{
+    border: 1px solid rgba(249, 249, 249, 0.91);
+    background: transparent;
+}
+
+/*====================== about part ====================*/
+.about-part{
+    width: 100%;
+    background: #000E40;
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.about-part .about-img{
+    overflow: hidden;
+}
+.about-part .about-img img{
+    width: 100%;
+}
+.about-part .about-img-position{
+    position: absolute;
+    background-image: url(/images/cta-shape-right.png);
+    width:700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom:  0;
+    right: -250px;
+    z-index: -1;
+}
+
+.about-part .about-text h2{
+    color: #f5f5f5;
+    font-family: nirmala;
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.about-part .about-text p{
+    color: rgba(249, 249, 249, 0.91);
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ============= Our Solutions part =========== */
+.our-solution-part{
+    padding: 70px 0;
+    background: url(/images/bg-choose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-solution-part h2{
+    color: #f5f5f5;
+    font-family: nirmala;
+    font-weight: 600;
+    font-size: 40px;
+}
+.our-solution-part .our-solution-text {
+	background: rgba(251, 250, 255, 0.37);
+	padding: 20px;
+	max-width: 490px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+.our-solution-part .our-solution-text .solution-img {
+	overflow: hidden;
+	border-radius: 10px;
+}
+.our-solution-part .our-solution-text .solution-img img{
+    width: 100%;
+}
+.our-solution-part .our-solution-text .solution-text h4 {
+	font-size: 26px;
+	font-weight: 600;
+	padding-top: 20px;
+    color: #f5f5f5;
+}
+.our-solution-part .our-solution-text .solution-text p{
+    font-size: 16px;
+    color: rgba(249, 249, 249, 0.91);
+}
+.our-solution-part .our-solution-text:hover{
+    background: linear-gradient(294.72deg, rgba(255, 69, 129, 0.5) 9.05%, rgba(67, 136, 221, 0.5) 79.28%);
+}
+.our-solution-part .our-solution-text .solution-text a{
+    padding: 10px 20px;
+    border: 1px solid rgba(249, 249, 249, 0.91);
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all linear 0.4s;
+}
+.our-solution-part .our-solution-text .solution-text a:hover{
+    background:#00AED9;
+    border-color: #00AED9;
+}
+
+
+/* ==================== tokenomics-part ========= */
+
+.tokenomics-part{
+    padding: 70px 0;
+    background: #000E40;
+}
+.tokenomics-part .tokenomics-img{
+    overflow: hidden;
+}
+.tokenomics-part .tokenomics-img img{
+    width: 100%;
+}
+@keyframes example {
+    0%   {top:0px;}
+    25%   {top:20px;}
+    50%  {top:0px;}
+    75%  {top:20px;}
+    100% {top:0px;}
+}
+.tokenomics-part .tokenomics-img img{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+.tokenomics-part .tokenomics-text h2 {
+	color: #f5f5f5;
+	font-family: nirmala;
+	font-weight: 600;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+.tokenomics-part .tokenomics-text p {
+	color: rgba(249, 249, 249, 0.91);
+	font-size: 16px;
+	font-weight: 400;
+    margin-bottom: 20px;
+}
+.tokenomics-part .tokenomics-text h4 {
+	font-size: 26px;
+	font-weight: 600;
+	padding-top: 70px;
+	color: #f5f5f5;
+}
+
+/* ==================== other-solutions-part ========= */
+.other-solutions{
+    padding: 70px 0;
+    background-color: #000D3A;
+    background-image: url(/images/dark-mode-gradient.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.other-solutions h2 {
+	color: #f5f5f5;
+	font-family: nirmala;
+	font-weight: 600;
+	font-size: 40px;
+	padding-bottom: 12px;
+}
+.other-solutions p {
+	color: rgba(249, 249, 249, 0.91);
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	width: 440px;
+	margin: 0 auto;
+}
+.other-solutions .other-text{
+    overflow: hidden;
+}
+.other-solutions .other-text img{
+    width: 100%;
+}
+.other-solutions .other-text {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(12px);
+	border-radius: 12px;
+	text-align: center;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.other-solutions .other-text h4{
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #f5f5f5;
+}
+.other-solutions .other-text p {
+	color: rgba(249, 249, 249, 0.91);
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	width: auto;
+}
+.other-solutions  .other-text .other-text-part{
+    padding: 10px 20px;
+}
+/* ==================== footer-part ========= */
+.footer-part{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #000A0F;
+    background-image: url(/images/footer-top-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer-part .footer-img img {
+	width: 130px;
+}
+.footer-part .social-icon{
+    padding: 30px 0;
+}
+
+.footer-part .social-icon a{
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    background:rgba(255, 255, 255, 0.1) ;
+    backdrop-filter: blur(12px);
+    display: inline-block;
+    border-radius: 8px;
+    margin-left: 10px;
+    color: #fff;
+    transition: all linear 0.4s;
+}
+.footer-part .social-icon a i{
+    margin-top: 10px;
+}
+.footer-part .social-icon a:hover {
+	background: linear-gradient(294.72deg, rgba(255, 69, 129, 0.5) 9.05%, rgba(67, 136, 221, 0.5) 79.28%);
+}
+.footer-part .footer-copyright p{
+    color: rgba(249, 249, 249, 0.91);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* =================== Responsive ================ */
+
+
+@media (max-width: 576px) { 
+    .navbar-toggler {
+        color: #fff;
+        outline: #fff;
+    }
+    .banner-part h1 {
+        font-size: 17px !important;
+        line-height: 30px;
+    }
+    .banner-part {
+        padding: 130px 0;
+    }
+    .about-part .about-text h2 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .about-part .about-text p {
+        font-size: 14px;
+    }
+    .our-solution-part h2 {
+        font-size: 30px;
+    }
+    .our-solution-part .our-solution-text .solution-text h4 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .our-solution-part .our-solution-text .solution-text p {
+        font-size: 14px;
+    }
+    .our-solution-part .our-solution-text .solution-text a {
+        margin-top: 0px;
+    }
+    .tokenomics-part .tokenomics-text h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .tokenomics-part .tokenomics-text p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .tokenomics-part .tokenomics-text h4 {
+        font-size: 22px;
+        font-weight: 600;
+        padding-top: 5px;
+    }
+    .other-solutions h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .other-solutions p {
+        font-size: 14px;
+        width: auto;
+    }
+    .other-solutions .other-text h4 {
+        font-size: 22px;
+        padding-top: 15px;
+    }
+    .other-solutions .other-text p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .footer-part .social-icon a {
+        margin-left: 5px;
+    }
+    .footer-part .footer-copyright p {
+        font-size: 12px;
+    }
+
+ }
+ @media (max-width: 768px){
+    .navbar-toggler {
+        color: #fff;
+        outline: #fff;
+    }
+    .banner-part h1 {
+        font-size: 38px;
+    }
+    .about-part .about-text h2 {
+        font-size: 35px;
+        padding-bottom: 0px;
+    }
+    .about-part .about-text p {
+        font-size: 14px;
+    }
+    .our-solution-part h2 {
+        font-size: 35px;
+    }
+    .our-solution-part .our-solution-text .solution-text h4 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .our-solution-part .our-solution-text .solution-text p {
+        font-size: 14px;
+    }
+    .our-solution-part .our-solution-text .solution-text a {
+        margin-top: 0px;
+    }
+    .tokenomics-part .tokenomics-text h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .tokenomics-part .tokenomics-text h4 {
+        font-size: 20px;
+        padding-top: 12px;
+    }
+    .other-solutions h2 {
+        font-size: 35px;
+        padding-bottom: 0px;
+    }
+    .other-solutions p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .other-solutions .other-text h4 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .other-solutions .other-text p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+ }
+
