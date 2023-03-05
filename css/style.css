@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: nirmala;
-    src: url(/css/web-fonts/Nirmala.ttf);
+    src: url(./css/web-fonts/Nirmala.ttf);
   }
   
   @font-face {
     font-family: roobert-regular;
-    src: url(/css/web-fonts/Roobert-Regular.ttf);
+    src: url(./css/web-fonts/Roobert-Regular.ttf);
   }
 
 body{
