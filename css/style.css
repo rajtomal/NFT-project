@@ -24,7 +24,7 @@ ul ,li{
 /*====================== header part ====================*/
 .navigation-part{
     background-color: #000E40;
-    background-image: url(/images/bac.svg);
+    background-image: url(images/bac.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +96,7 @@ ul ,li{
 
 .banner-part{
     padding: 230px 0;
-    background-image: url(/images/cover.png);
+    background-image: url(images/cover.png);
     text-align: center;
 }
 .banner-part h1 {
@@ -143,7 +143,7 @@ ul ,li{
 }
 .about-part .about-img-position{
     position: absolute;
-    background-image: url(/images/cta-shape-right.png);
+    background-image: url(images/cta-shape-right.png);
     width:700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ ul ,li{
 /* ============= Our Solutions part =========== */
 .our-solution-part{
     padding: 70px 0;
-    background: url(/images/bg-choose.jpg);
+    background: url(images/bg-choose.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,7 +273,7 @@ ul ,li{
 .other-solutions{
     padding: 70px 0;
     background-color: #000D3A;
-    background-image: url(/images/dark-mode-gradient.svg);
+    background-image: url(images/dark-mode-gradient.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +328,7 @@ ul ,li{
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #000A0F;
-    background-image: url(/images/footer-top-right.png);
+    background-image: url(images/footer-top-right.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
